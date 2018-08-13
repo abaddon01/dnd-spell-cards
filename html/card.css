@@ -58,8 +58,8 @@
 }
 
 html {
-   width: 1500px;
-   height: 2100px;
+   width: 1394px;
+   height: 2078px;
    margin: 0;
 }
 
@@ -81,9 +81,8 @@ body {
 
 .content {
    height: 1812px;
-   padding: 144px;
-   display: flex;
-   flex-direction: column;
+   padding: 120px;
+   
 }
 
 .flipped {
@@ -91,11 +90,10 @@ body {
 }
 
 .header {
-   display: flex;
    align-items: center;
-   height: 300px;
+   height: 200px;
    border-bottom: 4px solid #c9ad6a;
-   padding-bottom: 10px;
+   padding-bottom: 20px;
 }
 
 .level {
@@ -103,51 +101,97 @@ body {
    font-family: MrJeeves;
    text-align: center;
    color: #58180D;
-   position: relative;
-   top: -20px;
+   display:left;
+   position: absolute;
+   top: 70px;
+   width:150px;
+   left:80px;
 }
-
-.school img {
-   width: 200px;
-}
-
 .name {
-   flex-grow: 1;
-
    text-align: center;
    font-size: 96px;
    font-family: MrJeeves;
    color: #58180D;
-
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   position: absolute;
+   top:165px;
+   left:235px;
+   width:auto;
 }
+
+.school-image-middle{
+   width: 800px;
+   height:auto;
+   position:absolute;
+   top:650px;
+   left:297px;
+}
+.school-image-bottom{
+   width: 200px;
+   height:auto;
+   position:absolute;
+   top:1770px;
+   left:1050px;
+}
+.school-name-bottom{
+   text-align: center;
+   font-size: 96px;
+   font-family: MrJeeves;
+   color: #58180D;
+   width:1000px;
+   position: absolute;
+   top:1830px;
+   left:0px;
+}
+
+.school-name-bottom-lrg{
+   text-align: center;
+   font-size: 200px;
+   font-family: MrJeeves;
+   color: #58180D;
+   width:1000px;
+   position: absolute;
+   top:1800px;
+   left:0px;
+}
+
+.school img {
+   width: 200px;
+   position:absolute;
+   top:55px;
+   left:1100px;
+}
+
 
 .spell-body {
    height: 892px;
-
    padding-top: 30px;
    padding-bottom: 30px;
 
    font-family: BookSanity;
+}
 
-   flex-grow: 1;
-   display: flex;
-   flex-direction: column;
+.spell-table{
+    text-align: center;
+    display: left;
+    width:100%;
+    left:-100px;
+    margin-bottom:  50px;
 }
 
 .spell-content {
+    font-size:64px;
+    text-align: center;
 }
 
 .spell-content-row {
-   display: flex;
+   /*display: flex;*/
 }
 
 .spell-content-row, .components {
-   margin-bottom: 15px;
+   margin-bottom: 40px;
    font-family: ScalySans;
    font-size: 64px;
+   text-align: center;
 }
 
 .spell-content-item {
@@ -159,6 +203,19 @@ body {
    font-family: ScalySans;
    font-weight: 800;
    color: #58180D;
+   text-align:left;
+}
+
+th.content-header {
+    width:577px;
+}
+
+.content-data {
+    text-align:left;
+}
+td.content-data {
+    width:577px;
+    height:64px;
 }
 
 .range {
@@ -172,13 +229,24 @@ body {
 
 .components {
    text-align: center;
+   clear:both;
+   padding-bottom: 30px;
 }
 
-.components .content-data {
-   display: flex;
-   justify-content: space-between;
+.components {
+   display: block;
+   /*//justify-content: space-between;*/
 }
-
+li {
+    float: left;
+    list-style-type: none; 
+}
+.spell-component {
+    list-style-type: none; 
+    display: inline;
+    padding-right: 8x;
+       
+}
 .spell-component-false {
    color: #B1B1B1;
 }
@@ -187,19 +255,16 @@ body {
 }
 
 .description {
-   flex-grow: 1;
-
-   height: 388px;
+   height: 775px;
 
    background-color: rgba(250, 247, 234, 0.5);
    border-radius: 10px;
    box-shadow: 2px 2px 2px 2px #888888;
    border: 10px solid rgba(255, 255, 255, 0);
-
-   font-size: 45px;
+   font-size:60px;
 }
 
 .description p {
-   text-indent: 15mm;
+   text-indent: 10mm;
    text-align: justify;
 }
