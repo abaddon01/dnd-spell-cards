@@ -22,6 +22,8 @@ KEY_RANGE = 'range'
 KEY_DURATION = 'duration'
 KEY_TARGET = 'target'
 KEY_DESCRIPTION = 'description'
+KEY_SAVING_THROW='saving_throw'
+KEY_SPELL_RESISTANCE='spell_resistance'
 
 SPELL_PAGES_PATH = File.join('.', 'spells-pages.txt')
 SPELL_RENAMES_PATH = File.join('.', 'spells-renames.txt')
